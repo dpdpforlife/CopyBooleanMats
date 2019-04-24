@@ -54,6 +54,7 @@ class CopyBooleanMats(bpy.types.Operator):
                 bo = modifier.object
                 for mat in bo.data.materials:
                     object.data.materials.append(mat)
+	return {'FINISHED'}
 
 def register():
     bpy.utils.register_class(CopyBooleanMats)
